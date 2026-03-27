@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keaton's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">KD</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hey there, I'm</p>
+      <h1 class="hero-title">Keaton Duersch</h1>
+      <p class="hero-subtitle">Developer &bull; Creator &bull; Problem Solver</p>
+      <a href="#projects" class="btn btn-primary">See My Work</a>
+      <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    </div>
+    <div class="hero-doodle" aria-hidden="true">
+      <div class="doodle-circle c1"></div>
+      <div class="doodle-circle c2"></div>
+      <div class="doodle-star">&#9733;</div>
+      <div class="doodle-star s2">&#9733;</div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-placeholder">
+            <span>&#128512;</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="lead">
+            I'm a passionate developer who loves building things that live on the internet.
+            Whether it's a slick UI, a clever API, or a full-stack app — I'm all in.
+          </p>
+          <p>
+            When I'm not shipping code, you can find me exploring new tech, tinkering with side
+            projects, or rewatching classic cartoons for "inspiration."
+          </p>
+          <div class="skills-list">
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="card-accent"></div>
+          <h3 class="card-title">Project Alpha</h3>
+          <p class="card-desc">A full-stack web app that does something awesome. Built with React on the front and Node.js on the back.</p>
+          <div class="card-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="btn btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-accent accent-orange"></div>
+          <h3 class="card-title">Project Beta</h3>
+          <p class="card-desc">A CLI tool that automates repetitive tasks so developers can focus on what actually matters.</p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">CLI</span>
+            <span class="tag">Automation</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="btn btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-accent accent-blue"></div>
+          <h3 class="card-title">Project Gamma</h3>
+          <p class="card-desc">An open-source library that simplifies a common pain point in modern JavaScript development.</p>
+          <div class="card-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Open Source</span>
+            <span class="tag">npm</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="btn btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">Have a project in mind or just want to say hi? My inbox is always open.</p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message &#10148;</button>
+        <p class="form-success" id="formSuccess">Thanks! I'll get back to you soon. &#127881;</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Keaton Duersch. Built with &hearts; and way too much coffee.</p>
+    <div class="footer-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
